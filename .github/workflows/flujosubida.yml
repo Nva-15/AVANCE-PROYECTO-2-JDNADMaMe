@@ -49,3 +49,10 @@ jobs:
       - name: Datos generales
         run: echo "Carrera de ingeniería de sistemas"
         
+      # Tercer step - Variables secretas
+      - name: variables de entorno secretas
+        run: |
+          echo "user: ${{secrets.USER}}"
+          echo "password: ${{secrets.PASSWORD}}"
+      
+          
